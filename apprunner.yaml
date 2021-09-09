@@ -5,6 +5,6 @@ build:
     build:
     - pip install -r requirements.txt
 run:
-  command: streamlit run app.py –browser.serverAddress 0.0.0.0 –server.enableCORS False –server.port 80
+  command: streamlit run app.py –-browser.serverAddress 0.0.0.0 –-server.enableCORS False –-server.port 80
   network:
     port: 80
