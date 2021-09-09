@@ -1,5 +1,6 @@
 import streamlit as st
 import json
+import os
 
 #NLP PKGS
 from spacy.lang.en import English
@@ -32,6 +33,9 @@ def match_analyzer(my_text,nm):
 
 
 def main():
+
+    os.system( "taskset -pc 0-1 %d > /dev/null" % os.getpid() )
+    
 
     st.title("Test Match")
 
